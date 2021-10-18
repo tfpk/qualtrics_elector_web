@@ -1,28 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <b-container>
+    <h1>Step 1: Create Election</h1>
+    <CreateElection/>
+    <hr />
+    <h1>Step 2: Run Election</h1>
+    <RunElection/>
+  </b-container>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CreateElection from './components/CreateElection.vue'
+import RunElection from './components/RunElection.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+      CreateElection,
+      RunElection,
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
